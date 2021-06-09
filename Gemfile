@@ -16,6 +16,12 @@ gem 'devise', '~> 4.8'
 
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
+# Picture handling gems:
+gem 'carrierwave-aws', '~> 1.5'
+gem 'fog', '~> 2.2'
+gem 'mini_magick', '~> 4.11'
+
+
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
@@ -27,6 +33,7 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
   gem 'spring'
+  gem 'figaro', '~> 1.2'
 end
 
 group :test do
